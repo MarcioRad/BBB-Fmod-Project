@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{e89fb370-512e-4ec7-81f5-7b685583a994}">
         <property name="name">
-            <value>Blob_growup</value>
+            <value>blob_growup</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixer">
             <destination>{2a57e429-1696-4cb5-9d49-8699f44e44a4}</destination>
@@ -72,6 +72,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{e9cdb43d-5228-4e46-aeec-fcd7dfd677ad}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{1d9f9093-e6af-4b89-af89-7352d93c19c4}</destination>
         </relationship>
@@ -106,6 +109,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{62681b04-f1c7-4ba1-848f-ec4e432595f6}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -122,7 +128,6 @@
     <object class="MixerBusEffectChain" id="{1d9f9093-e6af-4b89-af89-7352d93c19c4}">
         <relationship name="effects">
             <destination>{74ee4a1b-5aa8-4759-9346-c4d72963e7fa}</destination>
-            <destination>{65cf337c-db36-4c23-afe3-601a2bb4e291}</destination>
             <destination>{48faac0c-0f76-443e-ab14-2be017ebf5bf}</destination>
         </relationship>
     </object>
@@ -143,10 +148,9 @@
     </object>
     <object class="MixerBusPanner" id="{872bdcb5-e07d-4012-bd49-57235d5c582f}"/>
     <object class="MixerBusFader" id="{74ee4a1b-5aa8-4759-9346-c4d72963e7fa}"/>
-    <object class="SpatialiserEffect" id="{65cf337c-db36-4c23-afe3-601a2bb4e291}"/>
     <object class="MixerSend" id="{48faac0c-0f76-443e-ab14-2be017ebf5bf}">
         <property name="inputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixerReturn">
             <destination>{c56a3839-c295-4cc9-8672-6fd430a2fc06}</destination>

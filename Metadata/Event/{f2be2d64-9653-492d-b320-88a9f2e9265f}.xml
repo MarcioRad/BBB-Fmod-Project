@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{f2be2d64-9653-492d-b320-88a9f2e9265f}">
         <property name="name">
-            <value>Blob_run</value>
+            <value>blob_run</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -79,7 +79,7 @@
             <value>size</value>
         </property>
         <property name="maximum">
-            <value>5</value>
+            <value>4</value>
         </property>
         <relationship name="modules">
             <destination>{5c5e2fc1-da05-4c30-a034-3d2c5c0cfb3b}</destination>
@@ -90,6 +90,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{e142dee1-4ea0-4b51-b2ab-a3b64a9b90d5}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{0bc515d2-005d-43bc-9b68-e28ec42373b8}</destination>
         </relationship>
@@ -111,8 +114,11 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>1</value>
+            <value>0.5</value>
         </property>
+        <relationship name="modulators">
+            <destination>{496f8f3c-fdcf-4537-8a17-81201751980c}</destination>
+        </relationship>
         <relationship name="parameters">
             <destination>{9510db7e-6aa7-444d-b70a-80e62f361cd3}</destination>
         </relationship>
@@ -122,7 +128,7 @@
     </object>
     <object class="EventSound" id="{2b70a770-fa9f-4086-ba6b-0d5f26b01b4d}">
         <property name="start">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -130,6 +136,9 @@
         <property name="pitch">
             <value>-2</value>
         </property>
+        <relationship name="modulators">
+            <destination>{651cb0e7-85da-41e4-b847-7d6fceea626f}</destination>
+        </relationship>
         <relationship name="parameters">
             <destination>{5580b54b-884d-4e5d-af73-c9b78c923d24}</destination>
         </relationship>
@@ -139,7 +148,7 @@
     </object>
     <object class="EventSound" id="{6a4e842d-aa78-473b-b3c4-afdfa632643f}">
         <property name="start">
-            <value>2.0001000000000002</value>
+            <value>1.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -147,6 +156,9 @@
         <property name="pitch">
             <value>-4</value>
         </property>
+        <relationship name="modulators">
+            <destination>{fdd98604-b46d-414e-aedd-7f3894f345ee}</destination>
+        </relationship>
         <relationship name="parameters">
             <destination>{bb1995dc-9b8e-42aa-9c9c-5a5720649d5b}</destination>
         </relationship>
@@ -156,7 +168,7 @@
     </object>
     <object class="EventSound" id="{e46616d0-bcdd-4b24-8a01-65bd728a72d1}">
         <property name="start">
-            <value>3</value>
+            <value>2.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -164,6 +176,9 @@
         <property name="pitch">
             <value>-6</value>
         </property>
+        <relationship name="modulators">
+            <destination>{43399d56-2c10-4b40-bb35-308347c25f6a}</destination>
+        </relationship>
         <relationship name="parameters">
             <destination>{3bc6423f-de3f-42e9-a10c-ac1ac1612b51}</destination>
         </relationship>
@@ -173,14 +188,17 @@
     </object>
     <object class="EventSound" id="{ceeec525-4219-4692-ac64-f09ab82dc3f7}">
         <property name="start">
-            <value>4</value>
+            <value>3.5</value>
         </property>
         <property name="length">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <property name="pitch">
             <value>-8</value>
         </property>
+        <relationship name="modulators">
+            <destination>{b362320a-4117-4ffb-8d97-6a21e620a8f2}</destination>
+        </relationship>
         <relationship name="parameters">
             <destination>{4e738726-3ee9-4818-9bf8-d0422f5cb1aa}</destination>
         </relationship>
@@ -217,25 +235,65 @@
         </property>
     </object>
     <object class="MixerBusFader" id="{65089b3e-8f12-400b-aca4-70040bff6722}"/>
+    <object class="RandomizerModulator" id="{496f8f3c-fdcf-4537-8a17-81201751980c}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>10</value>
+        </property>
+    </object>
     <object class="ParameterProperty" id="{9510db7e-6aa7-444d-b70a-80e62f361cd3}">
         <relationship name="parameter">
             <destination>{4023ab13-0727-4886-87e0-ea70d714a8ec}</destination>
         </relationship>
+    </object>
+    <object class="RandomizerModulator" id="{651cb0e7-85da-41e4-b847-7d6fceea626f}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>8.5</value>
+        </property>
     </object>
     <object class="ParameterProperty" id="{5580b54b-884d-4e5d-af73-c9b78c923d24}">
         <relationship name="parameter">
             <destination>{4023ab13-0727-4886-87e0-ea70d714a8ec}</destination>
         </relationship>
     </object>
+    <object class="RandomizerModulator" id="{fdd98604-b46d-414e-aedd-7f3894f345ee}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>14</value>
+        </property>
+    </object>
     <object class="ParameterProperty" id="{bb1995dc-9b8e-42aa-9c9c-5a5720649d5b}">
         <relationship name="parameter">
             <destination>{4023ab13-0727-4886-87e0-ea70d714a8ec}</destination>
         </relationship>
     </object>
+    <object class="RandomizerModulator" id="{43399d56-2c10-4b40-bb35-308347c25f6a}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>8.5</value>
+        </property>
+    </object>
     <object class="ParameterProperty" id="{3bc6423f-de3f-42e9-a10c-ac1ac1612b51}">
         <relationship name="parameter">
             <destination>{4023ab13-0727-4886-87e0-ea70d714a8ec}</destination>
         </relationship>
+    </object>
+    <object class="RandomizerModulator" id="{b362320a-4117-4ffb-8d97-6a21e620a8f2}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>pitch</value>
+        </property>
+        <property name="amount">
+            <value>20</value>
+        </property>
     </object>
     <object class="ParameterProperty" id="{4e738726-3ee9-4818-9bf8-d0422f5cb1aa}">
         <relationship name="parameter">

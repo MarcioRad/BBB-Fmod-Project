@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{afe306a0-7bfd-4fdc-8892-adc3aeb85f91}">
         <property name="name">
-            <value>Blob_splatdead</value>
+            <value>blob_splatdead</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -79,7 +79,7 @@
             <value>size</value>
         </property>
         <property name="maximum">
-            <value>5</value>
+            <value>4</value>
         </property>
         <relationship name="modules">
             <destination>{07050dbc-95be-4b0b-8dbd-bcfd05d12ad3}</destination>
@@ -90,6 +90,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{afe16b60-f2ee-45a8-9906-cebaa332413a}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{2abec092-7423-4780-9c70-6e0171935249}</destination>
         </relationship>
@@ -111,7 +114,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <relationship name="parameters">
             <destination>{e7d5dd92-58eb-49f5-945c-ebf873e03b89}</destination>
@@ -122,7 +125,7 @@
     </object>
     <object class="EventSound" id="{2a7f3d0d-2af5-4520-876c-58e549ef7ebd}">
         <property name="start">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -139,7 +142,7 @@
     </object>
     <object class="EventSound" id="{79bd991b-7400-49d0-8b07-d8dab104433f}">
         <property name="start">
-            <value>2</value>
+            <value>1.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -156,7 +159,7 @@
     </object>
     <object class="EventSound" id="{6260c3cb-48c8-4b46-9b66-585941bb1576}">
         <property name="start">
-            <value>3</value>
+            <value>2.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -173,10 +176,10 @@
     </object>
     <object class="EventSound" id="{68fc1c75-ab48-44e2-ae2f-27173ee18d71}">
         <property name="start">
-            <value>4</value>
+            <value>3.5</value>
         </property>
         <property name="length">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <property name="pitch">
             <value>-4</value>

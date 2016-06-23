@@ -2,10 +2,10 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{9de6193b-c1db-4585-b603-7ae216059bc8}">
         <property name="name">
-            <value>Blob_growdown</value>
+            <value>blob_growdown</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixer">
             <destination>{a3d091ba-29dd-4aa9-b933-7556adda9664}</destination>
@@ -72,6 +72,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{3235c568-3b36-4db2-92e5-70380a609a84}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{4ac5c235-11d2-4a8c-a27a-b27e371d0be4}</destination>
         </relationship>
@@ -122,7 +125,6 @@
     <object class="MixerBusEffectChain" id="{4ac5c235-11d2-4a8c-a27a-b27e371d0be4}">
         <relationship name="effects">
             <destination>{a041ed3f-dcc7-4e3e-9a67-5d2fcf5c670c}</destination>
-            <destination>{880c292b-7fb0-48c9-af51-eab40393ff8a}</destination>
             <destination>{2561a38c-4068-4b4d-a0d0-3bb6513414fc}</destination>
         </relationship>
     </object>
@@ -143,10 +145,9 @@
     </object>
     <object class="MixerBusPanner" id="{d2172167-edf8-4bc9-87eb-55a72b9801d1}"/>
     <object class="MixerBusFader" id="{a041ed3f-dcc7-4e3e-9a67-5d2fcf5c670c}"/>
-    <object class="SpatialiserEffect" id="{880c292b-7fb0-48c9-af51-eab40393ff8a}"/>
     <object class="MixerSend" id="{2561a38c-4068-4b4d-a0d0-3bb6513414fc}">
         <property name="inputFormat">
-            <value>2</value>
+            <value>0</value>
         </property>
         <relationship name="mixerReturn">
             <destination>{c56a3839-c295-4cc9-8672-6fd430a2fc06}</destination>

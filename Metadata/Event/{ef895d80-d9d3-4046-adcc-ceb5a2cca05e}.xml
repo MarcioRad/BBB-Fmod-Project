@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{ef895d80-d9d3-4046-adcc-ceb5a2cca05e}">
         <property name="name">
-            <value>Blob_eat</value>
+            <value>blob_eat</value>
         </property>
         <property name="outputFormat">
             <value>2</value>
@@ -79,7 +79,7 @@
             <value>size</value>
         </property>
         <property name="maximum">
-            <value>5</value>
+            <value>4</value>
         </property>
         <relationship name="modules">
             <destination>{5dafe16c-65a2-4caf-b1a8-7609aff44412}</destination>
@@ -90,6 +90,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{9c9325e5-ad47-4510-ad3b-a101fbc40882}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{5c147126-fe50-4506-962f-977210c79e07}</destination>
         </relationship>
@@ -111,7 +114,7 @@
             <value>0</value>
         </property>
         <property name="length">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <relationship name="parameters">
             <destination>{dd02d9cc-ab08-479d-866a-e9179c73192c}</destination>
@@ -122,7 +125,7 @@
     </object>
     <object class="EventSound" id="{f932b0ef-c006-4068-b425-188073245b38}">
         <property name="start">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -139,7 +142,7 @@
     </object>
     <object class="EventSound" id="{8ca5b9a9-be39-4c1a-8ceb-a009681c6cfb}">
         <property name="start">
-            <value>2</value>
+            <value>1.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -156,7 +159,7 @@
     </object>
     <object class="EventSound" id="{4577bd4b-849e-493a-a71b-3eb62e9aa6c6}">
         <property name="start">
-            <value>3</value>
+            <value>2.5</value>
         </property>
         <property name="length">
             <value>1</value>
@@ -173,10 +176,10 @@
     </object>
     <object class="EventSound" id="{754c5028-63d6-4f03-959b-d6b4e55e9c61}">
         <property name="start">
-            <value>4</value>
+            <value>3.5</value>
         </property>
         <property name="length">
-            <value>1</value>
+            <value>0.5</value>
         </property>
         <property name="pitch">
             <value>-4</value>
@@ -205,7 +208,6 @@
     <object class="MixerBusEffectChain" id="{5c147126-fe50-4506-962f-977210c79e07}">
         <relationship name="effects">
             <destination>{bdd8073a-c0e9-4951-a571-93ff41723cae}</destination>
-            <destination>{59b53233-c5c8-4b4b-8e63-64651484071b}</destination>
             <destination>{d191340e-4742-43ab-b426-e91a51dd6608}</destination>
         </relationship>
     </object>
@@ -243,7 +245,6 @@
     </object>
     <object class="MixerBusPanner" id="{871fab3f-3a96-4d99-9aa2-e8b335da35c2}"/>
     <object class="MixerBusFader" id="{bdd8073a-c0e9-4951-a571-93ff41723cae}"/>
-    <object class="SpatialiserEffect" id="{59b53233-c5c8-4b4b-8e63-64651484071b}"/>
     <object class="MixerSend" id="{d191340e-4742-43ab-b426-e91a51dd6608}">
         <property name="inputFormat">
             <value>2</value>

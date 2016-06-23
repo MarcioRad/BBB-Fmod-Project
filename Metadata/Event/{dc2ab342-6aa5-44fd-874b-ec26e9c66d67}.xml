@@ -5,7 +5,7 @@
             <value>scrigno_apertura</value>
         </property>
         <property name="outputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="mixer">
             <destination>{4c2bf7a5-fb74-488b-adb3-1b549ee441d6}</destination>
@@ -100,9 +100,6 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{35ee7cb2-7ec1-4d85-92ef-c8291cb09b4d}">
-        <property name="volume">
-            <value>-3</value>
-        </property>
         <property name="name">
             <value>Audio 1</value>
         </property>
@@ -119,7 +116,6 @@
     <object class="MixerBusEffectChain" id="{e65b2f8a-33dd-4ec7-8cf8-bd6ee1ce9056}">
         <relationship name="effects">
             <destination>{fa1b6d0b-f3a0-4823-8c17-3d81897b6834}</destination>
-            <destination>{acd9a8f3-4e30-4d7a-8f6c-a14211f66979}</destination>
             <destination>{fcda2854-9838-4ac6-8a65-0b79cd3726e8}</destination>
         </relationship>
     </object>
@@ -132,10 +128,9 @@
     </object>
     <object class="MixerBusPanner" id="{a686a1a8-2ff8-4ed3-93d6-84f8aa5ef56c}"/>
     <object class="MixerBusFader" id="{fa1b6d0b-f3a0-4823-8c17-3d81897b6834}"/>
-    <object class="SpatialiserEffect" id="{acd9a8f3-4e30-4d7a-8f6c-a14211f66979}"/>
     <object class="MixerSend" id="{fcda2854-9838-4ac6-8a65-0b79cd3726e8}">
         <property name="inputFormat">
-            <value>2</value>
+            <value>1</value>
         </property>
         <relationship name="mixerReturn">
             <destination>{c56a3839-c295-4cc9-8672-6fd430a2fc06}</destination>

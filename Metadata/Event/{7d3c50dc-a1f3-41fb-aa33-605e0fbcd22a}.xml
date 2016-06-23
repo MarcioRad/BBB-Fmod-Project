@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{7d3c50dc-a1f3-41fb-aa33-605e0fbcd22a}">
         <property name="name">
-            <value>Blob_falldead</value>
+            <value>blob_falldead</value>
         </property>
         <property name="outputFormat">
             <value>0</value>
@@ -72,6 +72,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{9f2f442f-8270-4637-a2aa-888801e9adb7}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{9e80f574-a666-4b3d-9ec4-7ce17cdd2920}</destination>
         </relationship>

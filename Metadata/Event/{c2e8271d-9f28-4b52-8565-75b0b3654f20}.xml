@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.01.08.00">
     <object class="Event" id="{c2e8271d-9f28-4b52-8565-75b0b3654f20}">
         <property name="name">
-            <value>Ambience</value>
+            <value>ambience</value>
         </property>
         <property name="outputFormat">
             <value>1</value>
@@ -89,6 +89,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{100b71da-d0bb-4742-9167-410e4b2fe1c2}">
+        <property name="volume">
+            <value>10</value>
+        </property>
         <relationship name="effectChain">
             <destination>{7bd036bb-efbb-4d58-a598-5538ea398796}</destination>
         </relationship>
@@ -120,6 +123,9 @@
         </relationship>
     </object>
     <object class="EventMixerGroup" id="{90d54505-317b-45fe-9633-cfb06bb1df9b}">
+        <property name="volume">
+            <value>3</value>
+        </property>
         <property name="name">
             <value>underwater</value>
         </property>
@@ -149,7 +155,7 @@
     </object>
     <object class="EventMixerGroup" id="{de720891-2a2e-496f-90d4-54ba13b2c368}">
         <property name="volume">
-            <value>-8</value>
+            <value>-6</value>
         </property>
         <property name="name">
             <value>filter</value>
